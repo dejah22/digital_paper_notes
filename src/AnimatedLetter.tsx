@@ -1,5 +1,5 @@
 import './AnimatedLetter.css';
-import { letterPaths } from './letterPathsGenerated';
+import { font } from './fonts/font1';
 type Props = {
   letter: string;
   index: number;
@@ -8,12 +8,13 @@ type Props = {
 };
 
 export default function AnimatedLetter({ letter, index, onStrokeStart, onStrokeEnd }: Props) {
-  const path = letterPaths[letter.toLowerCase() as keyof typeof letterPaths];
+  const path = font[letter.toLowerCase() as keyof typeof font];
   return (
     <svg
       className="letter-svg"
       style={{ animationDelay: `${index * 0.5}s` }}
-      width="50" height="50"
+      width="auto" height="1em"
+      preserveAspectRatio='xMinYMin meet'
       onAnimationStart={onStrokeStart}
       onAnimationEnd={onStrokeEnd}
     >
@@ -22,8 +23,6 @@ export default function AnimatedLetter({ letter, index, onStrokeStart, onStrokeE
         fill="none"
         stroke="#000"
         strokeWidth="2"
-        strokeDasharray="200"
-        strokeDashoffset="200"
         strokeLinecap="round"
         className="draw-stroke"
       />

@@ -1,14 +1,36 @@
 .paper {
   width: 100vw;
   height: 100vh;
-  background-image: url('paper/ruled_paper.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: sticky;
+  background-color: #fffef8;
+  background-image: 
+  linear-gradient(to right, #e88 2px, transparent 2px),
+  repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 44px,
+    #c0c0c0 45px
+  );
+  background-position: 4rem 0;
+  background-size: 100% 45px;
+  position: relative;
   overflow: hidden;
+  padding: 6rem 2rem 2rem 5rem;
+  box-sizing: border-box;
 }
-.text-layer { padding:1rem; font-family:'Patrick Hand'; font-size:36px; line-height:1.2; z-index:1; }
-.canvas-layer { position:absolute; inset:1rem; pointer-events:none; z-index:2; }
+
+/* letter rendering */
+.text-layer { 
+  font-size:36px;
+  line-height:45px;
+  letter-spacing: -4px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index:1; 
+}
+
+/* canvas on top of writing layer */
+.canvas-layer { position:absolute; top:0; left:0; right:0; bottom:0; pointer-events:none; z-index:2; }
 html, body, #root {
   margin: 0;
   padding: 0;
