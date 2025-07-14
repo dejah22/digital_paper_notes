@@ -21,7 +21,7 @@ export default function AnimatedLetter({ letter, index, onStrokeStart, onStrokeE
         d={path}
         fill="none"
         stroke="#000"
-        strokeWidth="4"
+        strokeWidth="2"
         strokeDasharray="200"
         strokeDashoffset="200"
         strokeLinecap="round"
