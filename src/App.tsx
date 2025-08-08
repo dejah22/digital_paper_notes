@@ -2,7 +2,6 @@ import { useState, useEffect, useRef, Suspense } from 'react';
 import AnimatedLetter from './AnimatedLetter';
 import Pencil from './Pencil';
 import {Canvas} from '@react-three/fiber'
-import { startSound, stopSound } from './sounds';
 import './App.css';
  
 export default function App() {
@@ -33,7 +32,7 @@ export default function App() {
     }
     setPositions(posArr);
   }, [letters]);
- 
+
   return (
     <div className="notebook-container" onClick={() => document.body.focus()}>
       <div className="paper">
@@ -41,7 +40,6 @@ export default function App() {
           {letters.map((ch, i) =>
             <AnimatedLetter
               key={i} letter={ch} index={i}
-
             />
           )}
         </div>

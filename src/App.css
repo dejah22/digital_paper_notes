@@ -20,13 +20,20 @@
 
 /* letter rendering */
 .text-layer { 
-  font-size:36px;
-  line-height:45px;
-  letter-spacing: -4px;
+  font-size: 36px;
+  line-height: 45px;
+  white-space: pre-wrap;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  z-index:1; 
+  z-index: 1;
+}
+
+.draw-stroke{
+  animation-name: draw;
+  animation-timing-function: cubic-bezier(0.02, 0, 0.98, 1);
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
 }
 
 /* canvas on top of writing layer */
@@ -38,3 +45,5 @@ html, body, #root {
   font-family: 'Caveat Brush', cursive;;
   min-height: 100vh;
 }
+
+
