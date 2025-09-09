@@ -1,6 +1,7 @@
 # Cutesy Digital Paper-pad with Animated Writing and Scratch Sounds
 
-This project explores the intersection of **human–computer interaction, animation, and sound design** through a playful, interactive notepad.  
+This project explores the intersection of **human–computer interaction, animation, and sound design** through a playful, interactive notepad. 📝
+
 As users type, text is rendered as **animated handwriting strokes** on digital lined paper, while synchronized **pencil scratch audio** creates the illusion of physically writing on a notebook.
 
 ## Highlights
