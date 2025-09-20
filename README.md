@@ -5,12 +5,11 @@ This project explores the intersection of **human–computer interaction, animat
 As users type, text is rendered as **animated handwriting strokes** on digital lined paper, while synchronized **pencil scratch audio** creates the illusion of physically writing on a notebook.
 
 ## Highlights
-- **Stroke-Based Handwriting Animation** – Typed characters are drawn in real time using vector font paths, simulating handwriting.  
-- **Multimodal Interaction** – Pencil scratch sounds dynamically synchronized with stroke animation enhance realism.  
-- **Notebook Aesthetic** – Lined-paper background, margins, and title space recreate the familiar look of a physical notebook.  
-- **Generative Pipeline** – Character vector paths and widths are programmatically generated, enabling dynamic spacing and kerning without pre-rendered assets.  
-- **Lightweight & Responsive** – Built with a modern web stack for 
-
+- Typed characters are drawn in real time using vector font paths, simulating handwriting.  
+- Pencil scratch sounds dynamically synchronized with stroke animation enhance realism.  
+- Lined-paper background, margins, and title space recreate the familiar look of a physical notebook.  
+- Character vector paths and widths are programmatically generated, enabling dynamic spacing and kerning without pre-rendered assets.  
+  
 ##  🛠️ Technical Stack
 ### ⚙️ Runtime & Build
 - [**Node.js**](https://nodejs.org/) – development runtime  
